@@ -6,3 +6,221 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --medium-weight: 600;
+
+}
+
+.contenedor_gral {
+    width: 1360px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    padding-left: 250px;
+    padding-top: 20px;
+    padding-right: 8px;
+}
+
+.header img {
+    height: 20px;
+}
+
+.search {
+    width: 460px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dddddd;  
+    border-radius: 40px;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.05) ;
+        padding: 8px;
+}
+
+.search:hover {
+    box-shadow: -1px 7px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.search button {
+    border: none;
+    font-size: 14px;
+    font-weight: var(--mediun-weight);
+    background-color: transparent;
+    padding-right: 15px;
+}
+
+.bordes_boton {
+    flex: 0 0 1px;
+    height: 24px;
+    width: 1px;
+    background-color: #dddddd;
+}
+
+.search__icon_viajeros {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    text-decoration-color: #717171;
+    
+}
+
+.viajeros {
+    color: #717171;
+}
+
+.search__icon_viajeros_icon{
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ff385c;
+    padding: 1px;
+    
+}
+
+.search__icon_viajeros img {
+    height: 25px;
+}
+
+.left_side img {
+    width: 118px;
+    
+}
+
+.right_side {
+    display: flex;
+    align-items: center;
+    width: 420px;
+    height: 80px;
+}
+.right_icon {
+    display: flex;
+    margin-right: 8px;
+}
+
+#pon_tu_casa {
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: var(--mediun-weight);
+    background-color: transparent;
+    padding: 10px;
+}
+#pon_tu_casa:hover {
+    background-color: #ebebeb;
+}
+
+#setting {
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    font-weight: var(--mediun-weight);
+    background-color: transparent;
+    padding: 8px;
+    
+}
+#setting:hover {
+    background-color: #ebebeb;
+}
+#setting img {
+    height: 30px; 
+}
+
+.user {
+    width: 76px;
+    height: 42px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.05);
+    
+}
+.user img {
+    height: 30px;
+}
+.user_img:hover {
+    background-color: #ebebeb;
+}
+.filters {
+    width: 1520px;
+    height: 98px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.filters_options {
+    width: 1360px;
+    height: 78px;
+    padding-left: 80px;
+    padding: right 80px;
+}
+.etiqueta {
+    width: 1280px;
+    height: 78px;
+    padding-left: 80px;
+    margin: 0;
+    padding-inline-start: var(--contentscroller_padding-inline-start, var(--contentscroller_peek, 32px));
+    padding-inline-end: var(--contentscroller_padding-inline-end, var(--contentscroller_peek, 32px));
+    display: grid;
+    justify-content: start;
+    grid-auto-flow: column;
+}
+main {
+    box-sizing: border-box;
+    display: block;
+    width: 1520px;
+    height: 243px;
+}
+
+.main_container {
+    --gp-placement-max-height: calc(100vh - 78px - 80px);
+    height: var(--gp-placement-max-height);
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.next_container {
+    margin-inline: auto;
+    -webkit-padding-start: var(--explore_padding-inline);
+    padding-inline-start: var(--explore_padding-inline);
+    -webkit-padding-end: var(--explore_padding-inline);
+    padding-inline-end: var(--explore_padding-inline);
+    background: var(--f-mkcy-f);
+    }
+.central_container {
+    box-sizing: border-box;
+    display: block;
+    left: 0px;
+}
+
+.next_container {
+    width: 321px;
+    height: 405px;
+    display: flex;
+    flex: 1 0 100%;
+    flex-direction: var(--card-layout_flex-direction);
+}
+
+.central_container {
+        
+}
+
+.central_container img {
+    height: 100%;
+    width: 100%;
+}
